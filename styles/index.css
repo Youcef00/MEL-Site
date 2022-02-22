@@ -1,0 +1,309 @@
+body {
+  font: 100% / 1.414 "Open Sans", "Roboto", arial, sans-serif;
+  background: #e9e9e9;
+  width: 100%;
+}
+
+header{
+  background-color: rgba(0,0,0,.76);
+  color: white;
+  padding: 0.5rem 1.5rem 0rem 1.5rem;
+  display: inline-flex;
+  width: 95%;
+  border-radius: 3px;
+  box-shadow: 2px 3px 7px rgba(0,0,0,.25);
+  margin-bottom: 2rem;
+}
+.logo img{
+  width:70px;
+  margin-right: 1.5rem;
+}
+#user{
+ text-align: right;
+ display: inline-flex;
+ margin: auto 0rem auto auto;
+
+}
+#user form{
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: inherit;
+}
+#user fieldset{
+  border: none;
+
+}
+#user input{
+  width: 10rem;
+  margin-left: 1rem;
+  background-color: white;
+  display: inline;
+}
+#user button{
+  height: 30px;
+  margin-bottom: 2.5rem;
+  margin-top: auto;
+  border-radius: 30px;
+  background: #e9e9e9;
+
+}
+#user button:focus{
+  border: none;
+}
+#user button:hover{
+  cursor: pointer;
+  background-color: rgba(222, 222, 222, 0.80) ;
+}
+#register, #register:visited{
+  /**position: absolute;
+  right: 170px; top: 88px; */
+  color: grey;
+  display: block;
+  padding-right: 20px;
+}
+
+/** #######   main   ####### */
+
+#choix{
+  width: 300px;
+}
+#form_communes{
+  width: 100px;
+}
+
+#main{
+  width: 100%;
+}
+/** ######   Choix des communes   ###### */
+input,select{
+  display: block;
+  width: 260px;
+  height: 30px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin: 7px;
+  font-size: 17px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.05);
+  border: none;
+  transition: background 0.5s;
+
+}
+input:focus, select:focus{
+  outline-width: 0;
+  background: rgba(31,134,252, 0.15);
+  transition: background 0.5s;
+}
+label{
+  padding-left: 8px;
+  font-size: 15px;
+  color: #444;
+}
+
+#form_communes button{
+      width: 260px;
+      height: 50px;
+      position: relative;
+      display: block;
+      margin: 20px 25px;
+      border-radius: 10px;
+      border: none;
+      background: #ff0020;
+      color: white;
+      font-size: 20px;
+      transition: background 0.4s;
+      cursor: pointer;
+    }
+#form_communes button:hover{
+        background: #E37786;
+        transition: background 0.4s;
+      }
+
+select{
+  height: 35px;
+  width: 270px;
+}
+
+select {
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1rem),
+    calc(100% - 15px) calc(1rem ),
+    calc(100% - 2.5rem) 0.5rem;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.4rem;
+  background-repeat: no-repeat;
+}
+
+select:focus {
+  background-image:
+    linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5rem) 0.5rem;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.4rem;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+/** ######   Carte   ###### */
+#carte {
+  width : 500px;
+  height : 500px;
+  margin-left: 5rem;
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: 0px 5px 9px rgba(0,0,0,.25);
+}
+
+
+/** ######   Liste des communes   ###### */
+.navigation{
+  width: 300px;
+  height: 500px;
+  margin-right: 1rem;
+  background-color: whitesmoke;
+  text-align: left;
+  border-radius: 0px 5px 5px 0px;
+  box-shadow: 0px 5px 9px rgba(0,0,0,.25);
+}
+nav ul{
+  height: 450px;
+  overflow:hidden;
+  overflow-y:scroll;
+  list-style-type: none;
+  padding-left: 0px;
+}
+nav li{
+  height: 30px;
+  font-size: 17px;
+  transition: background 0.5s;
+  padding: 0.5rem 0rem 0.25rem 0rem;
+  position: relative;
+  padding-left: 25px
+}
+nav li:hover{
+  background-color : #eee;
+  cursor: pointer;
+}
+/**  The star   */
+
+
+
+li span{
+  position: absolute;
+  right: 1rem;
+}
+
+#main{
+  display: inline-flex;
+}
+
+
+/** ######   Tableau des details   ###### */
+#details{
+padding: 0rem 1.5rem 0rem 0.25rem;
+
+}
+#details table{
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 3px -3px 10px rgba(0,0,0,.25);
+}
+
+#details table thead{
+  text-align: center;
+  background-color: rgba(0,0,0,.76);
+  color: white;
+}
+#details table th{
+  padding: 1rem;
+}
+
+#details table tbody tr:nth-of-type(2n+1){
+  background-color: #EEE;
+
+}
+#details table tbody tr td:nth-child(1){
+  font-weight: bold;
+  padding: 0.6rem;
+}
+#details table tbody tr td:nth-child(2){
+  font-size: 15px;
+}
+
+#details div.map{
+  height : 250px;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,.25);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+/**    ############################################################################ */
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #ED1C24;
+}
+.popup #content {
+  max-height: 30%;
+  overflow: auto;
+}
